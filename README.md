@@ -23,15 +23,32 @@ The program uses structures and pointers to connect the family members.
 
 ```bash
 gcc family_tree.c -o family_tree
+```
+
+## How to Run
+
+On Windows:
+
+```powershell
+.\family_tree.exe
+```
 
 ## Program Output
 
 The screenshots of the output of the Family Tree program.
 
+### Output 1
+
 ![Output 1](Output1.png)
+
+### Output 2
 
 ![Output 2](Output2.png)
 
+### Output 3
+
 ![Output 3](Output3.png)
+
+### Final Program Output
 
 ![Final Program Output](Finaloutput.png)
