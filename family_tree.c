@@ -76,6 +76,14 @@ void print_family_relationships(const Person *me)
            me->mother->mother->age);
 }
 
+void free_family_tree(Person *people[], int count)
+{
+    for (int i = 0; i < count; i++)
+    {
+        free(people[i]);
+    }
+}
+
 int main()
 {
     Person *people[7];
@@ -108,9 +116,7 @@ int main()
     link_parents(people[6], people[4], people[5]);
     print_family_relationships(people[6]);
 
-    for (int i = 0; i < 7; i++)
-    {
-        free(people[i]);
-    }
+    free_family_tree(people, 7);
+    printf("\nMemory cleanup done!\n");
     return 0;
 }
